@@ -4,3 +4,6 @@ document.getElementById('videoFile').addEventListener('change', function(event) 
     var videoURL = URL.createObjectURL(file);
     videoPlayer.src = videoURL;
 });
+
+var video = document.getElementById("videoPlayer");
+  video.volume = 0.2;
