@@ -24,18 +24,22 @@
     font-size: 5em;
     color: white;
     user-select: none;
-    
     margin-top: -133px;
 }
 .button-pos{
     display: flex;
     float: right;
+    width: 15%;
+    height: 100px;
     position: relative;
     user-select: none;
     background-color: #c90946;
-    margin-top: -70px;
+    margin-top: -95px;
     margin-right: 50px;
     border-radius: 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 .inputfile{
     user-select: none;
@@ -50,6 +54,7 @@
     border-radius: 6px;
     color: #fff;
     cursor: pointer;
+    padding: 30px 43px 30px;
 }
 .subtitles{
     display: block;
