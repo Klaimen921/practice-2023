@@ -16,23 +16,30 @@
           </label>
         </div>
     </div>
-    <div class="subtitles-text">
-        <input class="timings">
+    <div class="subtitles">
+        <div class="time-cod">
+            <input class="time-start" type="text" inputmode="numeric" placeholder="00:00:00.00" data-mask="99:99:99.00">
+            <input class="time-end" type="text" inputmode="numeric" placeholder="00:00:00.00" data-mask="99:99:99.00">
+        </div>
+        <div class="subtitles-text">
+            <textarea placeholder="Новые субтитры" class="text-for-video"></textarea>
+        </div>
     </div>
     <video id="videoPlayer" class="video" controls>
+        <track label="Ukrainian" kind="subtitles" srclang="ua" src="subtitles.vtt" default>
     </video>
     <script type="text/javascript" src="scriptbutton.js"></script>
     <div class="player">
     </div>
     <footer class="info">
         <div class="info-first">
-            <p class="description">
+            <span class="description">
                 Сайт для створення субтитрів для відео – це онлайн-інструмент, 
                 який забезпечує зручне та ефективне створення субтитрів для відеоматеріалів. 
                 Він надає користувачам можливість додавати текстові субтитри до відео, 
                 синхронізувати їх з аудіо та візуальним вмістом, а також редагувати та налаштовувати 
                 субтитри на свій розсуд.
-            </p>
+            </span>
         </div>
         <div class="info-second">
             <ul>

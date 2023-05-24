@@ -4,20 +4,36 @@
     margin: 0;
 }
 .head{
-    top: 0;
-    left: 0;
     width: 100%;
     height: 150px;
     background: linear-gradient(to left, #aa0ab9 , #0bc24b);
+    align-items: center;
+    justify-content: center;
+}
+.ava{
+    width: 50px;
+    height: 50px;
+    user-select: none;
+    margin: 50px 50px;
+    transform: scale(1.5);
+}
+.header{
+    display:flex;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    justify-content: center;
+    font-size: 5em;
+    color: white;
+    user-select: none;
+    
+    margin-top: -133px;
 }
 .button-pos{
-    width: 15%;
+    display: flex;
+    float: right;
     position: relative;
     user-select: none;
     background-color: #c90946;
-    float: right;
-    display: flex;
-    margin-top: -98px;
+    margin-top: -70px;
     margin-right: 50px;
     border-radius: 10px;
 }
@@ -28,46 +44,35 @@
     display: none;
 }
 .button-text{
-    font-family: Inter,sans-serif;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     user-select: none;
-    display: flex;
-    align-items: center;
-    min-height: 100px;
-    padding-left: 50px;
-    padding-right: 60px;
-    font-size: 25px;
+    font-size: 30px;
     border-radius: 6px;
     color: #fff;
     cursor: pointer;
 }
-.ava{
-    width: 50px;
-    height: 50px;
-    user-select: none;
-    margin: 50px 50px;
-    transform: scale(1.5);
-}
-.header{
-    font-size: 5em;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    user-select: none;
-    display:flex;
-    margin-top: -125px;
-}
-
-.subtitles-text{
+.subtitles{
+    display: block;
     width: 20%;
     height: 856px;
     background-color: blue;
     float: left;
 }
-.timings{
-    display: flex;
-    width: 200px;
-    height: 50px;
+.time-cod{
+    width: 28%;
+    padding: 10px;
+    float: left;
+}
+.time-start, .time-end{
+    width: 75px;
+    margin: 5px;
+}
+.subtitles-text{
+    padding: 10px;
+}
+.text-for-video{
+    width: 250px;
+    height: 60px;
 }
 .video{
     width: 80%;
@@ -87,19 +92,19 @@
     margin-top: 1%;
     margin-bottom: 7%;
 }
-.description{
-    font-family: Helvetica, Arial, sans-serif;
-    text-align: center;
-    overflow-x: hidden;
-}
 .info-first{
-    display: flex;
     width: 30%;
     height: 100px;
     float: left;
     margin-left: 19%;
     box-shadow:0px 0px 10px 5px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
+}
+.description{
+    font-family: Helvetica, Arial, sans-serif;
+    text-align: center;
+    line-height: 20px;
+    font-size: 16px;
 }
 .info-second{
     display: flex;
