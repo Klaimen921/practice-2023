@@ -41,6 +41,10 @@
     justify-content: center;
     align-items: center;
 }
+.button-pos:active{
+    background-color: gray;
+    transition: 0.25s;
+}
 .inputfile{
     user-select: none;
     margin: 0;
