@@ -66,18 +66,26 @@
     height: 856px;
     background-color: blue;
     float: left;
+    overflow-y: scroll;
+}
+.subtitles-list {
+    width: 100%;
+    height: max-content;
 }
 .time-cod{
-    width: 28%;
-    padding: 10px;
-    float: left;
+    width: max-content;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
 }
-.time-start, .time-end{
-    width: 75px;
-    margin: 5px;
+.time-selector{
+    width: max-content;
 }
 .subtitles-text{
-    padding: 10px;
+    padding-top: 10px;
+}
+.add-subtitle-button {
+    padding-top: 10px;
 }
 .text-for-video{
     width: 250px;

@@ -4,29 +4,28 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <link href="subtitles.css" rel="stylesheet" type="text/css">
   <title>subtitles</title>
+
+  <script type="module" src="./Classes/SubtitleBlock.js"></script>
+  <script type="module" src="./addRemoveSubtitleButton.js"></script>
  </head>
- <body>
+ <body onload="AddSubtitleBlock()">
     <div class="head">
         <img src="icons8-воспроизведение-100.png" class="ava">
         <a class="header">Subtitles</a>
-            <div class="button-pos">
-                <input type="file" class="inputfile" id="videoFile" accept="video/*">
+        <div class="button-pos">
+            <input type="file" class="inputfile" id="videoFile" accept="video/*">
             <label for="videoFile" class="button-text">
-            Виберіть файл
-          </label>
+                Виберіть файл
+            </label>
         </div>
     </div>
     <div class="subtitles">
-        <div class="time-cod">
-            <input class="time-start" type="text" inputmode="numeric" placeholder="00:00:00.00" data-mask="99:99:99.00">
-            <input class="time-end" type="text" inputmode="numeric" placeholder="00:00:00.00" data-mask="99:99:99.00">
-        </div>
-        <div class="subtitles-text">
-            <textarea placeholder="Новые субтитры" class="text-for-video"></textarea>
+        <div id="subtitles-list-div" class="subtitles-list">
+
         </div>
     </div>
     <video id="videoPlayer" class="video" controls>
-        <track label="Ukrainian" kind="subtitles" srclang="ua" src="subtitles.vtt" default>
+        <!-- <track label="Ukrainian" kind="subtitles" srclang="ua" src="subtitles.vtt" default> -->
     </video>
     <script type="text/javascript" src="scriptbutton.js"></script>
     <div class="player">
@@ -34,10 +33,10 @@
     <footer class="info">
         <div class="info-first">
             <span class="description">
-                Сайт для створення субтитрів для відео – це онлайн-інструмент, 
-                який забезпечує зручне та ефективне створення субтитрів для відеоматеріалів. 
-                Він надає користувачам можливість додавати текстові субтитри до відео, 
-                синхронізувати їх з аудіо та візуальним вмістом, а також редагувати та налаштовувати 
+                Сайт для створення субтитрів для відео – це онлайн-інструмент,
+                який забезпечує зручне та ефективне створення субтитрів для відеоматеріалів.
+                Він надає користувачам можливість додавати текстові субтитри до відео,
+                синхронізувати їх з аудіо та візуальним вмістом, а також редагувати та налаштовувати
                 субтитри на свій розсуд.
             </span>
         </div>
@@ -55,7 +54,7 @@
             </ul>
         </div>
     </footer>
-   
+
  </body>
 </html>
 
